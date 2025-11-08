@@ -1,12 +1,15 @@
+/* ===== ROOT VARIABLES ===== */
 :root {
   --primary-color: #004aad;
   --secondary-color: #f5f5f5;
   --accent-color: #ffcc00;
   --text-color: #333;
   --font-main: "Open Sans", sans-serif;
+  --radius: 6px;
+  --spacing: 1rem;
 }
 
-/* ===== GLOBAL ===== */
+/* ===== GLOBAL RESET ===== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,9 +28,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--primary-color);
-  color: white;
-  padding: 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: var(--spacing);
   position: relative;
 }
 
@@ -50,7 +53,7 @@ header {
 #menu-button {
   background: none;
   border: none;
-  color: white;
+  color: #fff;
   font-size: 2rem;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -91,9 +94,9 @@ nav li {
 
 nav a {
   display: block;
+  padding: 1rem;
   color: #fff;
   text-decoration: none;
-  padding: 1rem;
   font-weight: 600;
 }
 
@@ -105,7 +108,7 @@ nav a.active {
 
 /* ===== MAIN ===== */
 main {
-  padding: 1rem;
+  padding: var(--spacing);
 }
 
 h1 {
@@ -116,18 +119,18 @@ h1 {
 }
 
 section {
-  background: white;
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  background: #fff;
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  margin-bottom: var(--spacing);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
   background: var(--primary-color);
-  color: white;
+  color: #fff;
   padding: 0.5rem;
-  border-radius: 4px 4px 0 0;
+  border-radius: var(--radius) var(--radius) 0 0;
   font-size: 1.1rem;
   margin: -1rem -1rem 1rem -1rem;
 }
@@ -136,7 +139,7 @@ section h2 {
   display: block;
   margin: 0.5rem auto;
   max-width: 100%;
-  border-radius: 6px;
+  border-radius: var(--radius);
 }
 
 /* ===== COURSES ===== */
@@ -154,10 +157,10 @@ section h2 {
 
 .filters button {
   background-color: var(--primary-color);
-  color: white;
+  color: #fff;
   border: none;
   padding: 0.5rem 1.2rem;
-  border-radius: 4px;
+  border-radius: var(--radius);
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s ease;
@@ -170,7 +173,7 @@ section h2 {
 
 .course-cards {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* vertical in mobile */
   align-items: center;
   gap: 0.5rem;
 }
@@ -178,7 +181,7 @@ section h2 {
 .course-card {
   background: #eaeaea;
   padding: 0.8rem;
-  border-radius: 6px;
+  border-radius: var(--radius);
   width: 80%;
   max-width: 200px;
   text-align: center;
@@ -199,9 +202,9 @@ section h2 {
 /* ===== FOOTER ===== */
 footer {
   background-color: var(--primary-color);
-  color: white;
+  color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: var(--spacing);
 }
 
 footer .social {
