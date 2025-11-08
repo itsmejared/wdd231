@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jared Huayta - Chamber of Commerce project for WDD231.">
+    <meta name="author" content="Jared Huayta">
+    <title>Chamber of Commerce | Jared Huayta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+
+    <!-- JS -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.svg" alt="Site Logo" class="logo">
+            <span class="site-name">Lima Chamber of Commerce</span>
+        </div>
+        <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="top-sections">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm <strong>Jared Huayta</strong>, a software engineer from Lima, Perú 🇵🇪.
+                    I’m building this Chamber of Commerce project for WDD231 to help local businesses connect and grow.
+                    I enjoy learning, solving problems, and designing experiences that make technology easier to use.
+                </p>
+            </section>
+
+            <section class="photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="Jared profile photo" class="student-photo">
+            </section>
+        </div>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="filters">
+                <button id="filter-all">All</button>
+                <button id="filter-cse">CSE</button>
+                <button id="filter-wdd">WDD</button>
+            </div>
+
+            <div id="course-cards" class="course-cards"></div>
+
+            <p class="credits">
+                The total credits for courses listed above is <span id="total-credits">0</span>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://linkedin.com/in/jaredhuayta" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn icon">
+            </a>
+            <a href="https://github.com/jaredhuayta" target="_blank" aria-label="GitHub">
+                <img src="images/github.svg" alt="GitHub icon">
+            </a>
+            <a href="https://x.com" aria-label="X account">
+                <img src="images/x.svg" alt="X icon">
+            </a>
+        </div>
+
+        <p>&copy; <span id="currentyear"></span> • Jared Huayta • Lima, Perú 🇵🇪</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
