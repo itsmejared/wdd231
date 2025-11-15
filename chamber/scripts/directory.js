@@ -1,49 +1,71 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const directory = document.querySelector("#directory");
-  const gridBtn = document.querySelector("#grid-btn");
-  const listBtn = document.querySelector("#list-btn");
 
-  async function loadMembers() {
-    const response = await fetch("data/members.json");
-    const members = await response.json();
-    displayMembers(members);
-  }
+    const membersContainer = document.getElementById("membersContainer");
+    const gridBtn = document.getElementById("gridBtn");
+    const listBtn = document.getElementById("listBtn");
+    const jsonURL = "data/members.json";
 
-  function displayMembers(members) {
-    directory.innerHTML = "";
+    let membersData = [];
 
-    members.forEach(member => {
-      const card = document.createElement("article");
+    async function loadMembers() {
+        const response = await fetch(jsonURL);
+        membersData = await response.json();
+        displayGridView();
+    }
 
-      card.innerHTML = `
-        <img src="images/${member.image}" alt="${member.name}">
-        <h3>${member.name}</h3>
-        <p>${member.address}</p>
-        <p>${member.phone}</p>
-        <a href="${member.website}" target="_blank">${member.website}</a>
-      `;
+    // -------------------------------
+    // GRID VIEW (tarjetas)
+    // -------------------------------
+    function displayGridView() {
+        membersContainer.innerHTML = "";
+        membersContainer.classList.add("directory-grid");
+        membersContainer.classList.remove("directory-list");
 
-      directory.appendChild(card);
-    });
-  }
+        membersData.forEach(m => {
+            const card = document.createElement("section");
+            card.classList.add("member-card");
 
-  gridBtn.addEventListener("click", () => {
-    directory.classList.add("grid-view");
-    directory.classList.remove("list-view");
-    gridBtn.classList.add("active");
-    listBtn.classList.remove("active");
-  });
+            card.innerHTML = `
+                <img src="images/${m.image}" alt="${m.name}">
+                <h3>${m.name}</h3>
+                <p>${m.address}</p>
+                <p>${m.phone}</p>
+                <a href="${m.website}" target="_blank">Visit Website</a>
+            `;
 
-  listBtn.addEventListener("click", () => {
-    directory.classList.add("list-view");
-    directory.classList.remove("grid-view");
-    listBtn.classList.add("active");
-    gridBtn.classList.remove("active");
-  });
+            membersContainer.appendChild(card);
+        });
+    }
 
-  // Footer dates
-  document.querySelector("#year").textContent = new Date().getFullYear();
-  document.querySelector("#last-mod").textContent = document.lastModified;
+    // -------------------------------
+    // LIST VIEW (fila estilo tabla)
+    // -------------------------------
+    function displayListView() {
+        membersContainer.innerHTML = "";
+        membersContainer.classList.add("directory-list");
+        membersContainer.classList.remove("directory-grid");
 
-  loadMembers();
+        membersData.forEach((m, index) => {
+            const row = document.createElement("div");
+            row.classList.add("list-item");
+            if (index % 2 === 0) row.classList.add("even");
+
+            row.innerHTML = `
+                <span class="list-name">${m.name}</span>
+                <span class="list-address">${m.address}</span>
+                <span class="list-phone">${m.phone}</span>
+                <span class="list-website"><a href="${m.website}" target="_blank">${m.website}</a></span>
+            `;
+
+            membersContainer.appendChild(row);
+        });
+    }
+
+    // -------------------------------
+    // Buttons
+    // -------------------------------
+    gridBtn.addEventListener("click", displayGridView);
+    listBtn.addEventListener("click", displayListView);
+
+    loadMembers();
 });

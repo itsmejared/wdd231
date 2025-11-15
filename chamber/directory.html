@@ -50,17 +50,11 @@
     </header>
 
     <main>
-        <h1>Business Directory</h1>
-
-        <!-- Buttons for Grid / List view -->
         <div class="view-buttons">
-            <button id="grid-btn" class="active" aria-label="Grid view">🔳</button>
-            <button id="list-btn" aria-label="List view">📃</button>
+            <button id="gridBtn">⬛ Grid View</button>
+            <button id="listBtn">☰ List View</button>
         </div>
-
-        <!-- Members directory container -->
-        <section id="directory" class="grid-view">
-        </section>
+        <div id="membersContainer" class="directory-grid"></div>
     </main>
 
     <footer>
@@ -77,7 +71,7 @@
         </div>
 
         <p>WDD231 • Jared Huayta • Lima, Perú 🇵🇪</p>
-        <p>&copy; <span id="currentYear"></span> Lima Chamber of Commerce</p>
+        <p>&copy; <span id="currentyear"></span> Lima Chamber of Commerce</p>
         <p id="lastModified"></p>
     </footer>
 </body>

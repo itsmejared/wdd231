@@ -236,3 +236,90 @@
     margin: 0.3rem 0;
   }
 }
+
+/* =============================== */
+/* DIRECTORY PAGE – GRID / LIST VIEWS */
+/* =============================== */
+
+.view-buttons {
+  text-align: center;
+  margin: 1rem 0;
+  display: none; /* oculto en mobile */
+}
+
+.view-buttons button {
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.view-buttons button:hover {
+  background: var(--accent-color);
+  color: #000;
+}
+
+/* GRID VIEW */
+.directory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+/* =============================== */
+/* LIST VIEW – estilo tabla */
+/* =============================== */
+
+.directory-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Cada fila */
+.list-item {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr 1fr 1.5fr;
+    padding: 1rem;
+    align-items: center;
+    font-size: 0.95rem;
+    background: #fff;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+/* Zebra style */
+.list-item.even {
+    background: #eef9f7;
+}
+
+/* text alignment */
+.list-name {
+    font-weight: 600;
+}
+
+.list-website a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+/* Hover */
+.list-item:hover {
+    background: #dff3ff;
+}
+
+/* Hide images in list view */
+.directory-list img {
+    display: none !important;
+}
+
+
+/* Desktop – mostrar botones */
+@media screen and (min-width: 640px) {
+  .view-buttons {
+    display: block;
+  }
+}
