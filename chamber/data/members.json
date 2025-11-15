@@ -1,26 +1,83 @@
 [
   {
-    "name": "Idaho Websites",
-    "address": "2115 S Vista Avenue Boise ID 83705",
-    "phone": "(208) 342-9386",
-    "website": "https://idahowebsites.com/",
-    "image": "idweb.png",
-    "level": 1
+    "name": "Kent’s Market",
+    "address": "4855 Central Ave Lima, Peru",
+    "phone": "(01) 456-8890",
+    "website": "https://kentsmarket.example.com",
+    "image": "kents.png",
+    "level": 3,
+    "description": "Gold member grocery store offering fresh produce and specialty foods."
   },
   {
-    "name": "Surge Web Design",
-    "address": "4072 E Arch Drive Meridian ID 83646",
-    "phone": "(208) 631-0640",
-    "website": "https://www.surgewebdesign.com/",
-    "image": "surge.png",
-    "level": 2
+    "name": "Indulge Bakery & Café",
+    "address": "Av. Los Cedros 225 Santiago de Surco, Lima",
+    "phone": "(01) 689-1123",
+    "website": "https://indulgebakery.example.com",
+    "image": "indulge.png",
+    "level": 2,
+    "description": "Local café specializing in artisan pastries and custom cakes."
   },
   {
-    "name": "Graphic Zen",
-    "address": "1788 E Summerplace Court Meridian ID 83646",
-    "phone": "(208) 631-4984",
-    "website": "https://graphiczen.com/",
-    "image": "zen.png",
-    "level": 3
+    "name": "Ace Hardware Lima",
+    "address": "Av. La Marina 3205 San Miguel, Lima",
+    "phone": "(01) 512-3098",
+    "website": "https://acehardware.example.com",
+    "image": "ace.png",
+    "level": 1,
+    "description": "Home improvement store providing tools, materials, and installation services."
+  },
+  {
+    "name": "FitZone Fitness Club",
+    "address": "Av. Aviación 2800 San Borja, Lima",
+    "phone": "(01) 720-4567",
+    "website": "https://fitzone.example.com",
+    "image": "fitness.png",
+    "level": 3,
+    "description": "24/7 gym with premium equipment, group classes, and personal training."
+  },
+  {
+    "name": "WAWHD Technology Solutions",
+    "address": "Av. Javier Prado Este 4500 La Molina, Lima",
+    "phone": "(01) 987-7765",
+    "website": "https://wawhdtech.example.com",
+    "image": "wawhd.jpg",
+    "level": 1,
+    "description": "IT solutions provider offering cloud hosting, web apps, and analytics services."
+  },
+  {
+    "name": "YesPrint Graphics",
+    "address": "Av. Universitaria 1599 Los Olivos, Lima",
+    "phone": "(01) 600-7788",
+    "website": "https://yesprint.example.com",
+    "image": "yesprint.png",
+    "level": 2,
+    "description": "Full-service print shop offering signs, banners, brochures, and digital graphics."
+  },
+  {
+    "name": "Pizza Central",
+    "address": "Av. Arequipa 1235 Lince, Lima",
+    "phone": "(01) 900-7761",
+    "website": "https://pizzacentral.example.com",
+    "image": "pizza.png",
+    "level": 1,
+    "description": "Family-owned pizzeria known for wood-fired pizzas and fast delivery."
+  },
+  {
+    "name": "Crumpreese Ice Cream",
+    "address": "Av. Angamos Oeste 125 Miraflores, Lima",
+    "phone": "(01) 455-9081",
+    "website": "https://crumpreese.example.com",
+    "image": "crumpreese.jpg",
+    "level": 2,
+    "description": "Handcrafted ice cream shop offering seasonal flavors and vegan options."
+  },
+  {
+    "name": "Twisted Sugar Drinks & Treats",
+    "address": "Av. Caminos del Inca 123 Surco, Lima",
+    "phone": "(01) 789-9923",
+    "website": "https://twistedsugar.example.com",
+    "image": "twistedsugar.png",
+    "level": 3,
+    "description": "Gold member dessert shop offering specialty sodas, cookies, and gourmet treats."
   }
 ]

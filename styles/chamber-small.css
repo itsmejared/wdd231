@@ -227,3 +227,42 @@ footer p {
   margin: 0.3rem 0;
   font-size: 0.9rem;
 }
+
+/* GRID VIEW */
+#directory.grid-view {
+  display: grid;
+  gap: 1rem;
+}
+
+#directory.grid-view article {
+  background: white;
+  padding: 1rem;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* LIST VIEW */
+#directory.list-view article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+#directory.list-view article:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* View toggle buttons */
+.view-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.view-buttons button.active {
+  background-color: var(--accent-color);
+  color: black;
+}
