@@ -4,10 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jared Huayta - Chamber of Commerce project for WDD231.">
+    <title>Lima Chamber of Commerce – Directory</title>
+    <meta name="description" content="Business directory of members of the Lima Chamber of Commerce.">
     <meta name="author" content="Jared Huayta">
-    <title>Chamber of Commerce | Jared Huayta</title>
-    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Social Meta -->
+    <meta property="og:title" content="Lima Chamber of Commerce – Directory">
+    <meta property="og:description" content="Discover the businesses that support our community.">
+    <meta property="og:image" content="images/social-share.png">
+    <meta property="og:url" content="https://tu-sitio.com/chamber/directory.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +28,7 @@
     <!-- JS -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
@@ -32,47 +40,16 @@
         <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
         <nav id="nav-menu">
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#">Chamber Project</a></li>
-                <li><a href="#">Final Project</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Home</h1>
 
-        <div class="top-sections">
-            <section class="about">
-                <h2>About Me</h2>
-                <p>
-                    Hello! I'm <strong>Jared Huayta</strong>, a software engineer from Lima, Perú 🇵🇪.
-                    I’m building this Chamber of Commerce project for WDD231 to help local businesses connect and grow.
-                    I enjoy learning, solving problems, and designing experiences that make technology easier to use.
-                </p>
-            </section>
-
-            <section class="photo">
-                <h2>Student Photo</h2>
-                <img src="images/profile.jpg" alt="Jared profile photo" class="student-photo">
-            </section>
-        </div>
-
-        <section class="courses">
-            <h2>Web Certificate Courses</h2>
-
-            <div class="filters">
-                <button id="filter-all">All</button>
-                <button id="filter-cse">CSE</button>
-                <button id="filter-wdd">WDD</button>
-            </div>
-
-            <div id="course-cards" class="course-cards"></div>
-
-            <p class="credits">
-                The total credits for courses listed above is <span id="total-credits">0</span>.
-            </p>
-        </section>
     </main>
 
     <footer>

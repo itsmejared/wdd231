@@ -1,0 +1,229 @@
+/* ===== ROOT VARIABLES ===== */
+:root {
+  --primary-color: #004aad;
+  --secondary-color: #f5f5f5;
+  --accent-color: #ffcc00;
+  --text-color: #333;
+  --font-main: "Open Sans", sans-serif;
+  --radius: 6px;
+  --spacing: 1rem;
+}
+
+/* ===== GLOBAL RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: var(--spacing);
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  width: 40px;
+}
+
+.site-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* ===== MENU BUTTON ===== */
+#menu-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#menu-button:hover {
+  transform: scale(1.1);
+}
+
+/* ===== NAVIGATION (Hidden by default) ===== */
+nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+nav.open {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--accent-color);
+  color: #000;
+}
+
+/* ===== MAIN ===== */
+main {
+  padding: var(--spacing);
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+section {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  margin-bottom: var(--spacing);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: var(--radius) var(--radius) 0 0;
+  font-size: 1.1rem;
+  margin: -1rem -1rem 1rem -1rem;
+}
+
+.student-photo {
+  display: block;
+  margin: 0.5rem auto;
+  max-width: 100%;
+  border-radius: var(--radius);
+}
+
+/* ===== COURSES ===== */
+.courses {
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.filters button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.filters button:hover {
+  background-color: var(--accent-color);
+  color: #000;
+}
+
+.course-cards {
+  display: flex;
+  flex-direction: column; /* vertical in mobile */
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.course-card {
+  background: #eaeaea;
+  padding: 0.8rem;
+  border-radius: var(--radius);
+  width: 80%;
+  max-width: 200px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.course-card.completed {
+  background-color: #d2ffd2;
+  border: 2px solid #32a852;
+}
+
+.credits {
+  margin-top: 0.8rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: var(--spacing);
+}
+
+footer .social {
+  margin-bottom: 0.5rem;
+}
+
+footer img {
+  width: 24px;
+  height: 24px;
+  margin: 0 0.4rem;
+  filter: invert(1);
+  transition: transform 0.2s ease;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+}
+
+footer p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
