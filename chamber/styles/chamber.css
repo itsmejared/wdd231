@@ -270,6 +270,69 @@
   gap: 1rem;
 }
 
+/* =====================================================
+   DIRECTORY – GRID CARD IMPROVEMENTS
+   ===================================================== */
+
+.member-card {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+    /* CENTRAR CONTENIDO */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    /* TAMAÑO UNIFORME */
+    min-height: 320px;
+    max-height: 420px;
+    padding: 1.2rem;
+
+    /* EVITAR QUE EL CARD CREZCA DE MÁS */
+    overflow: hidden;
+}
+
+.member-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.member-card p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+}
+
+.member-card a {
+    margin-top: auto; /* empuja el link abajo */
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.member-card a:hover {
+    color: var(--accent-color);
+}
+
+/* =====================================================
+   IMÁGENES UNIFORMES
+   ===================================================== */
+
+.member-card img {
+    width: 100%;
+    max-width: 150px;   /* máximo */
+    min-width: 120px;   /* mínimo */
+    height: auto;
+
+    aspect-ratio: 1 / 1; /* cuadrado uniforme */
+    object-fit: contain; /* no recorta, mantiene la imagen */
+    
+    margin-bottom: 1rem;
+}
+
 /* =============================== */
 /* LIST VIEW – estilo tabla */
 /* =============================== */
