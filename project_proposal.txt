@@ -1,0 +1,8 @@
+1. Project Subject  
+FSY Youth Music & Variety Program Website  
+
+2. Project Description  
+This website will have three pages. It will be an information site designed to help youth, parents, and leaders learn about the FSY Music & Variety Program. The site will include general information about the program, guidelines for participation, and details about auditions and expectations. It will also provide instructions, examples, and resources to help participants prepare. The site will be interactive and will use simple dynamic elements with JavaScript, JSON data, and browser APIs.  
+
+3. Reason and Purpose  
+I chose this subject because I help organize FSY activities. I’ve seen that youth and leaders often need more clarity about what the Music & Variety Program includes. Creating this site will help gather the information in a clear, accessible, and appealing way. It will also let me build something useful for my community while applying the web development skills I learned in the course.

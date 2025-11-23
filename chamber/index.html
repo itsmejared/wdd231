@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lima Chamber of Commerce – Directory</title>
-    <meta name="description" content="Business directory of members of the Lima Chamber of Commerce.">
+    <meta name="description"
+        content="Welcome to the Lima Chamber of Commerce. Learn about events, weather, and local businesses.">
     <meta name="author" content="Jared Huayta">
 
     <!-- Social Meta -->
-    <meta property="og:title" content="Lima Chamber of Commerce – Directory">
-    <meta property="og:description" content="Discover the businesses that support our community.">
-    <meta property="og:image" content="images/social-share.png">
-    <meta property="og:url" content="https://tu-sitio.com/chamber/directory.html">
+    <meta property="og:title" content="Lima Chamber of Commerce">
+    <meta property="og:description" content="Learn about events, weather, and local businesses.">
+    <meta property="og:image" content="https://itsmejared.github.io/wdd231/chamber/images/og-image.jpg" />
+    <meta property="og:url" content="https://itsmejared.github.io/wdd231/chamber/index.html">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -22,13 +23,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/chamber-small.css">
     <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
 
     <!-- JS -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </head>
 
 <body>
@@ -42,13 +44,68 @@
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+
+        <h1>Home</h1>
+
+        <!-- HERO  -->
+        <section class="hero">
+            <img src="images/hero.png" alt="City view" class="hero-img">
+            <div class="hero-text">
+                <h2>Welcome to the Lima Chamber of Commerce</h2>
+                <p>Supporting local businesses and strengthening our community.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <!-- === TOP INFO GRID === -->
+        <div class="info-grid">
+
+            <!-- EVENTS -->
+            <div class="info-card events">
+                <h3>Events</h3>
+                <ul>
+                    <li><strong>Business Networking Lunch:</strong> March 12</li>
+                    <li><strong>Local Business Expo:</strong> March 25–26</li>
+                    <li><strong>Community Clean-Up:</strong> April 5</li>
+                </ul>
+            </div>
+
+            <!-- CURRENT WEATHER -->
+            <section class="info-card weather-card">
+                <h3>Current Weather</h3>
+
+                <div class="weather-flex">
+                    <img src="images/weather-icon.png" alt="Weather Icon" class="weather-icon">
+
+                    <div id="cw-details">
+                        <p><strong id="cw-temp">--</strong></p>
+                        <p id="cw-desc">Loading...</p>
+                        <p>High: <span id="cw-high">--</span></p>
+                        <p>Low: <span id="cw-low">--</span></p>
+                        <p>Humidity: <span id="cw-hum">--</span>%</p>
+                        <p>Sunrise: <span id="cw-sunrise">--</span></p>
+                        <p>Sunset: <span id="cw-sunset">--</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WEATHER FORECAST -->
+            <section class="info-card forecast-card">
+                <h3>Weather Forecast</h3>
+                <div id="forecast-list"></div>
+            </section>
+
+        </div>
+
+        <!-- === SPOTLIGHTS === -->
+        <div class="info-grid spotlight-grid" id="spotlight-container"></div>
 
     </main>
 
@@ -65,7 +122,8 @@
             </a>
         </div>
 
-        <p>&copy; <span id="currentyear"></span> • Jared Huayta • Lima, Perú 🇵🇪</p>
+        <p>WDD231 • Jared Huayta • Lima, Perú 🇵🇪</p>
+        <p>&copy; <span id="currentyear"></span> Lima Chamber of Commerce</p>
         <p id="lastModified"></p>
     </footer>
 </body>

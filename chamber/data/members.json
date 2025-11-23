@@ -6,7 +6,9 @@
     "website": "https://kentsmarket.example.com",
     "image": "kents.png",
     "level": 3,
-    "description": "Gold member grocery store offering fresh produce and specialty foods."
+    "description": "Gold member grocery store offering fresh produce and specialty foods.",
+    "membership": "Gold",
+    "email": "contact@kentsmarket.com"
   },
   {
     "name": "Indulge Bakery & Café",
@@ -15,7 +17,9 @@
     "website": "https://indulgebakery.example.com",
     "image": "indulge.png",
     "level": 2,
-    "description": "Local café specializing in artisan pastries and custom cakes."
+    "description": "Local café specializing in artisan pastries and custom cakes.",
+    "membership": "Silver",
+    "email": "hello@indulgebakery.com"
   },
   {
     "name": "Ace Hardware Lima",
@@ -24,7 +28,9 @@
     "website": "https://acehardware.example.com",
     "image": "ace.png",
     "level": 1,
-    "description": "Home improvement store providing tools, materials, and installation services."
+    "description": "Home improvement store providing tools, materials, and installation services.",
+    "membership": "Gold",
+    "email": "support@acehardwarelima.com"
   },
   {
     "name": "FitZone Fitness Club",
@@ -33,7 +39,9 @@
     "website": "https://fitzone.example.com",
     "image": "fitness.png",
     "level": 3,
-    "description": "24/7 gym with premium equipment, group classes, and personal training."
+    "description": "24/7 gym with premium equipment, group classes, and personal training.",
+    "membership": "Silver",
+    "email": "info@fitzoneclub.com"
   },
   {
     "name": "WAWHD Technology Solutions",
@@ -42,7 +50,9 @@
     "website": "https://wawhdtech.example.com",
     "image": "wawhd.jpg",
     "level": 1,
-    "description": "IT solutions provider offering cloud hosting, web apps, and analytics services."
+    "description": "IT solutions provider offering cloud hosting, web apps, and analytics services.",
+    "membership": "Gold",
+    "email": "contact@wawhdtech.com"
   },
   {
     "name": "YesPrint Graphics",
@@ -51,7 +61,9 @@
     "website": "https://yesprint.example.com",
     "image": "yesprint.png",
     "level": 2,
-    "description": "Full-service print shop offering signs, banners, brochures, and digital graphics."
+    "description": "Full-service print shop offering signs, banners, brochures, and digital graphics.",
+    "membership": "Silver",
+    "email": "sales@yesprintgraphics.com"
   },
   {
     "name": "Pizza Central",
@@ -60,7 +72,9 @@
     "website": "https://pizzacentral.example.com",
     "image": "pizza.png",
     "level": 1,
-    "description": "Family-owned pizzeria known for wood-fired pizzas and fast delivery."
+    "description": "Family-owned pizzeria known for wood-fired pizzas and fast delivery.",
+    "membership": "Gold",
+    "email": "orders@pizzacentral.com"
   },
   {
     "name": "Crumpreese Ice Cream",
@@ -69,7 +83,9 @@
     "website": "https://crumpreese.example.com",
     "image": "crumpreese.jpg",
     "level": 2,
-    "description": "Handcrafted ice cream shop offering seasonal flavors and vegan options."
+    "description": "Handcrafted ice cream shop offering seasonal flavors and vegan options.",
+    "membership": "Silver",
+    "email": "hello@crumpreeseicecream.com"
   },
   {
     "name": "Twisted Sugar Drinks & Treats",
@@ -78,6 +94,8 @@
     "website": "https://twistedsugar.example.com",
     "image": "twistedsugar.png",
     "level": 3,
-    "description": "Gold member dessert shop offering specialty sodas, cookies, and gourmet treats."
+    "description": "Gold member dessert shop offering specialty sodas, cookies, and gourmet treats.",
+    "membership": "Gold",
+    "email": "contact@twistedsugarperu.com"
   }
 ]
