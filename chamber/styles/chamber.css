@@ -39,12 +39,6 @@ nav {
   padding: 0;
 }
 
-nav {
-  position: static !important;
-  top: auto !important;
-  left: auto !important;
-}
-
 nav li {
   border-top: 0 !important; /* remove mobile border */
 }
@@ -81,14 +75,12 @@ header {
 
 /* ===== NAVIGATION ===== */
 nav {
-  display: flex !important;
+  display: flex;
   justify-content: flex-end;
   align-items: center;
   flex: 1;
   background: transparent;
   border: none;
-  opacity: 1 !important;
-  transform: none !important;
 }
 
 nav ul {

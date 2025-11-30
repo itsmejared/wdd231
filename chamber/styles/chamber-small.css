@@ -34,6 +34,7 @@
     font-size: 2rem;
     cursor: pointer;
     transition: transform 0.2s ease;
+    display: block;
   }
 
   #menu-button:hover {
@@ -51,6 +52,7 @@
     opacity: 0;
     transform: translateY(-10px);
     transition: all 0.3s ease;
+    z-index: 9999;
   }
 
   nav.open {
@@ -63,10 +65,12 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    display: block;      /* ← ADD THIS */
   }
 
   nav li {
     border-top: 1px solid rgba(255, 255, 255, 0.25);
+    display: block;      /* ← ADD THIS */
   }
 
   nav a {
