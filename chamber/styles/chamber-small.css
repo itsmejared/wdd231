@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--white-color);
     padding: var(--spacing);
     position: relative;
   }
@@ -30,7 +30,7 @@
   #menu-button {
     background: none;
     border: none;
-    color: #fff;
+    color: var(--white-color);
     font-size: 2rem;
     cursor: pointer;
     transition: transform 0.2s ease;
@@ -65,18 +65,18 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    display: block;      /* ← ADD THIS */
+    display: block; /* ← ADD THIS */
   }
 
   nav li {
     border-top: 1px solid rgba(255, 255, 255, 0.25);
-    display: block;      /* ← ADD THIS */
+    display: block; /* ← ADD THIS */
   }
 
   nav a {
     display: block;
     padding: 1rem;
-    color: #fff;
+    color: var(--white-color);
     text-decoration: none;
     font-weight: 600;
   }
@@ -84,7 +84,7 @@
   nav a:hover,
   nav a.active {
     background-color: var(--accent-color);
-    color: #000;
+    color: var(--black-color);
   }
 
   /* ===== MAIN ===== */
@@ -100,7 +100,7 @@
   }
 
   section {
-    background: #fff;
+    background: var(--white-color);
     border-radius: var(--radius);
     padding: var(--spacing);
     margin-bottom: var(--spacing);
@@ -109,76 +109,13 @@
 
   section h2 {
     background: var(--primary-color);
-    color: #fff;
+    color: var(--white-color);
     padding: 0.5rem;
     border-radius: var(--radius) var(--radius) 0 0;
     font-size: 1.1rem;
     margin: -1rem -1rem 1rem -1rem;
   }
 
-  .student-photo {
-    display: block;
-    margin: 0.5rem auto;
-    max-width: 100%;
-    border-radius: var(--radius);
-  }
-
-  /* ===== COURSES ===== */
-  .courses {
-    text-align: center;
-  }
-
-  .filters {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    margin: 1rem 0;
-  }
-
-  .filters button {
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1.2rem;
-    border-radius: var(--radius);
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s ease;
-  }
-
-  .filters button:hover {
-    background-color: var(--accent-color);
-    color: #000;
-  }
-
-  .course-cards {
-    display: flex;
-    flex-direction: column; /* vertical en mobile */
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .course-card {
-    background: #eaeaea;
-    padding: 0.8rem;
-    border-radius: var(--radius);
-    width: 80%;
-    max-width: 200px;
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .course-card.completed {
-    background-color: #d2ffd2;
-    border: 2px solid #32a852;
-  }
-
-  .credits {
-    margin-top: 0.8rem;
-    font-weight: 500;
-    font-size: 0.95rem;
-  }
   .hero-text h2,
   .hero-text p {
     display: none;
@@ -210,14 +147,10 @@
     font-size: 1.1rem;
   }
 
-  .spotlight-row {
-    grid-template-columns: 1fr;
-  }
-
   /* ===== FOOTER ===== */
   footer {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--white-color);
     text-align: center;
     padding: var(--spacing);
   }
