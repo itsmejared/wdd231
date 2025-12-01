@@ -57,7 +57,6 @@
             <!-- FORM SECTION -->
             <section class="join-form-section">
                 <h2>Membership Application</h2>
-
                 <form method="get" action="thankyou.html" class="join-form">
 
                     <fieldset>
@@ -65,35 +64,41 @@
 
                         <label>
                             <span>First Name *</span>
-                            <input type="text" name="firstName" required autocomplete="given-name">
+                            <input type="text" name="firstName" required autocomplete="given-name"
+                                title="Enter your first name">
                         </label>
 
                         <label>
                             <span>Last Name *</span>
-                            <input type="text" name="lastName" required autocomplete="family-name">
+                            <input type="text" name="lastName" required autocomplete="family-name"
+                                title="Enter your last name">
                         </label>
 
                         <label>
                             <span>Organization Title</span>
-                            <input type="text" name="organizationTitle" pattern="[A-Za-z\- ]{7,}"
-                                autocomplete="organization-title">
+                            <input type="text" name="organizationTitle" autocomplete="organization-title"
+                                pattern="[A-Za-z\- ]{7,}"
+                                title="Enter your organizational title using only letters, hyphens, and spaces">
                         </label>
 
                         <label>
                             <span>Email *</span>
-                            <input type="email" name="email" required autocomplete="email"
-                                placeholder="you@example.com">
+                            <input type="email" name="email" required autocomplete="email" placeholder="you@example.com"
+                                title="Enter your email address">
                         </label>
 
                         <label>
                             <span>Mobile Phone *</span>
-                            <input type="tel" name="phone" required autocomplete="tel">
+                            <input type="tel" name="phone" required autocomplete="tel"
+                                title="Enter your mobile phone number">
                         </label>
 
                         <label>
                             <span>Organization Name *</span>
-                            <input type="text" name="organizationName" required autocomplete="organization">
+                            <input type="text" name="organizationName" required autocomplete="organization"
+                                title="Enter the name of your organization">
                         </label>
+
                     </fieldset>
 
                     <fieldset>
@@ -101,7 +106,7 @@
 
                         <label>
                             <span>Membership Level *</span>
-                            <select name="membershipLevel" required>
+                            <select name="membershipLevel" required title="Select a membership level">
                                 <option value="" disabled selected>Select a level</option>
                                 <option value="np">NP Membership</option>
                                 <option value="bronze">Bronze Membership</option>
@@ -112,13 +117,16 @@
 
                         <label>
                             <span>Organization Description</span>
-                            <textarea name="description" rows="4"></textarea>
+                            <textarea name="description" rows="4"
+                                title="Describe your business or organization"></textarea>
                         </label>
 
+                        <!-- Timestamp hidden -->
                         <input type="hidden" name="timestamp" id="timestamp">
                     </fieldset>
 
                     <button type="submit" class="submit-button">Submit Application</button>
+
                 </form>
             </section>
 
