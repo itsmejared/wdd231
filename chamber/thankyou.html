@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You – Lima Chamber of Commerce</title>
+    <meta name="description"
+        content="Thank you for applying to join the Lima Chamber of Commerce. Review your submitted information.">
+    <meta name="author" content="Jared Huayta">
+
+    <!-- Social Meta -->
+    <meta property="og:title" content="Thank You – Lima Chamber of Commerce">
+    <meta property="og:description"
+        content="Your membership application has been received by the Lima Chamber of Commerce.">
+    <meta property="og:image" content="https://itsmejared.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://itsmejared.github.io/wdd231/chamber/thankyou.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+
+    <!-- JS -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.svg" alt="Site Logo" class="logo">
+            <span class="site-name">Lima Chamber of Commerce</span>
+        </div>
+        <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Thank You for Your Application</h1>
+
+        <section class="thankyou-section">
+            <h2>Submitted Information</h2>
+            <p>We have received your membership application. Below is a summary of the information you submitted.</p>
+
+            <div class="thankyou-details">
+                <div class="detail-row">
+                    <span class="label">First Name:</span>
+                    <span id="first-name"></span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Last Name:</span>
+                    <span id="last-name"></span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Email:</span>
+                    <span id="email"></span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Mobile Phone:</span>
+                    <span id="phone"></span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Business / Organization:</span>
+                    <span id="organization"></span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Membership Level:</span>
+                    <span id="membership"></span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Form Submitted At:</span>
+                    <span id="timestamp-display"></span>
+                </div>
+            </div>
+
+            <p class="thankyou-note">
+                A chamber representative will contact you soon with the next steps.
+            </p>
+            <p>
+                <a href="index.html">Return to Home</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://linkedin.com/in/jaredhuayta" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn icon">
+            </a>
+            <a href="https://github.com/jaredhuayta" target="_blank" aria-label="GitHub">
+                <img src="images/github.svg" alt="GitHub icon">
+            </a>
+            <a href="https://x.com" aria-label="X account">
+                <img src="images/xlogo.svg" alt="X icon">
+            </a>
+        </div>
+
+        <p>WDD231 • Jared Huayta • Lima, Perú 🇵🇪</p>
+        <p>&copy; <span id="currentyear"></span> Lima Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
