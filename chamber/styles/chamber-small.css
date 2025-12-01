@@ -147,6 +147,33 @@
     font-size: 1.1rem;
   }
 
+  /* =========================================================
+   JOIN — MOBILE
+   ========================================================= */
+  .join-container {
+    display: block;
+  }
+
+  .join-form-section,
+  .membership-levels {
+    margin-bottom: var(--spacing);
+  }
+
+  .membership-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* =========================================================
+   THANKYOU — MOBILE
+   ========================================================= */
+  .thankyou-details {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-row {
+    grid-template-columns: 1fr;
+  }
+
   /* ===== FOOTER ===== */
   footer {
     background-color: var(--primary-color);

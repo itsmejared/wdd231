@@ -51,53 +51,52 @@
     </header>
 
     <main>
-        <!-- ÚNICO H1 EN MAIN -->
         <h1>Join the Lima Chamber of Commerce</h1>
 
         <div class="join-container">
-            <!-- FORMULARIO DE APLICACIÓN -->
+            <!-- FORM SECTION -->
             <section class="join-form-section">
                 <h2>Membership Application</h2>
 
                 <form method="get" action="thankyou.html" class="join-form">
+
                     <fieldset>
                         <legend>Applicant Information</legend>
 
                         <label>
-                            <span>First Name<span aria-hidden="true"> *</span></span>
-                            <input type="text" name="firstName" required title="Enter your given name"
-                                autocomplete="given-name">
+                            <span>First Name *</span>
+                            <input type="text" name="firstName" required autocomplete="given-name"
+                                title="Enter your first name">
                         </label>
 
                         <label>
-                            <span>Last Name<span aria-hidden="true"> *</span></span>
-                            <input type="text" name="lastName" required title="Enter your family name"
-                                autocomplete="family-name">
+                            <span>Last Name *</span>
+                            <input type="text" name="lastName" required autocomplete="family-name"
+                                title="Enter your last name">
                         </label>
 
                         <label>
                             <span>Organization Title</span>
-                            <input type="text" name="organizationTitle"
-                                title="Only letters, spaces, and hyphens. At least 7 characters."
-                                autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}">
+                            <input type="text" name="organizationTitle" autocomplete="organization-title"
+                                pattern="[A-Za-z\- ]{7,}" title="Only letters, spaces, hyphens. Minimum 7 characters.">
                         </label>
 
                         <label>
-                            <span>Email<span aria-hidden="true"> *</span></span>
-                            <input type="email" name="email" required title="Enter a valid email address"
-                                autocomplete="email" placeholder="you@example.com">
+                            <span>Email *</span>
+                            <input type="email" name="email" required autocomplete="email" placeholder="you@example.com"
+                                title="Enter a valid email address">
                         </label>
 
                         <label>
-                            <span>Mobile Phone<span aria-hidden="true"> *</span></span>
-                            <input type="tel" name="phone" required title="Enter your mobile phone number"
-                                autocomplete="tel">
+                            <span>Mobile Phone *</span>
+                            <input type="tel" name="phone" required autocomplete="tel"
+                                title="Enter your mobile phone number">
                         </label>
 
                         <label>
-                            <span>Business / Organization Name<span aria-hidden="true"> *</span></span>
-                            <input type="text" name="organizationName" required title="Enter your organization name"
-                                autocomplete="organization">
+                            <span>Organization Name *</span>
+                            <input type="text" name="organizationName" required autocomplete="organization"
+                                title="Enter the organization name">
                         </label>
                     </fieldset>
 
@@ -105,10 +104,10 @@
                         <legend>Membership Details</legend>
 
                         <label>
-                            <span>Membership Level<span aria-hidden="true"> *</span></span>
+                            <span>Membership Level *</span>
                             <select name="membershipLevel" required title="Select a membership level">
-                                <option value="" disabled selected>Select a level</option>
-                                <option value="np">NP Membership (Non Profit – no fee)</option>
+                                <option value="" selected disabled>Select a level</option>
+                                <option value="np">NP Membership (Non-Profit)</option>
                                 <option value="bronze">Bronze Membership</option>
                                 <option value="silver">Silver Membership</option>
                                 <option value="gold">Gold Membership</option>
@@ -116,12 +115,10 @@
                         </label>
 
                         <label>
-                            <span>Business / Organization Description</span>
-                            <textarea name="description" rows="5"
-                                title="Describe your business or organization"></textarea>
+                            <span>Organization Description</span>
+                            <textarea name="description" rows="4" title="Describe your organization"></textarea>
                         </label>
 
-                        <!-- TIMESTAMP HIDDEN -->
                         <input type="hidden" name="timestamp" id="timestamp">
                     </fieldset>
 
@@ -129,64 +126,57 @@
                 </form>
             </section>
 
-            <!-- TARJETAS DE LEVELS + LINKS A MODALS -->
+            <!-- MEMBERSHIP CARDS -->
             <aside class="membership-levels">
                 <h2>Membership Levels</h2>
-                <p class="membership-intro">
-                    Compare our membership levels and click to see detailed benefits.
-                </p>
+
+                <p class="membership-intro">Compare benefits and choose the best option for your organization.</p>
 
                 <div class="membership-card-grid">
+
                     <article class="membership-card">
                         <h3>NP Membership</h3>
-                        <p>For non-profit organizations. No membership fee.</p>
+                        <p>No fee. For non-profit organizations.</p>
                         <p class="price">Fee: S/ 0</p>
-                        <a href="#np-benefits" class="benefits-link" data-modal="np">
-                            View benefits
-                        </a>
+                        <a href="#" class="benefits-link" data-modal="np">View Benefits</a>
                     </article>
 
                     <article class="membership-card">
                         <h3>Bronze Membership</h3>
-                        <p>Perfect for small businesses starting to grow their network.</p>
-                        <p class="price">Fee: S/ 250 / year</p>
-                        <a href="#bronze-benefits" class="benefits-link" data-modal="bronze">
-                            View benefits
-                        </a>
+                        <p>Ideal for small growing businesses.</p>
+                        <p class="price">Fee: S/ 250/year</p>
+                        <a href="#" class="benefits-link" data-modal="bronze">View Benefits</a>
                     </article>
 
                     <article class="membership-card">
                         <h3>Silver Membership</h3>
-                        <p>Extra visibility, training and event discounts.</p>
-                        <p class="price">Fee: S/ 500 / year</p>
-                        <a href="#silver-benefits" class="benefits-link" data-modal="silver">
-                            View benefits
-                        </a>
+                        <p>Greater visibility and event discounts.</p>
+                        <p class="price">Fee: S/ 500/year</p>
+                        <a href="#" class="benefits-link" data-modal="silver">View Benefits</a>
                     </article>
 
                     <article class="membership-card">
                         <h3>Gold Membership</h3>
-                        <p>Maximum exposure, spotlight advertising and VIP invitations.</p>
-                        <p class="price">Fee: S/ 900 / year</p>
-                        <a href="#gold-benefits" class="benefits-link" data-modal="gold">
-                            View benefits
-                        </a>
+                        <p>Maximum exposure and premium benefits.</p>
+                        <p class="price">Fee: S/ 900/year</p>
+                        <a href="#" class="benefits-link" data-modal="gold">View Benefits</a>
                     </article>
+
                 </div>
             </aside>
         </div>
 
-        <!-- MODALS DE BENEFICIOS (HTML DIALOG) -->
+        <!-- MODALS -->
         <dialog id="modal-np" class="membership-modal">
             <form method="dialog" class="modal-content">
                 <h2>NP Membership Benefits</h2>
                 <ul>
-                    <li>No annual membership fee.</li>
-                    <li>Access to selected chamber events.</li>
-                    <li>Listing in the online business directory.</li>
-                    <li>Invitations to non-profit networking sessions.</li>
+                    <li>No annual fee</li>
+                    <li>Included in business directory</li>
+                    <li>Access to non-profit networking events</li>
+                    <li>Invitations to selected chamber events</li>
                 </ul>
-                <button type="submit" class="modal-close">Close</button>
+                <button class="modal-close">Close</button>
             </form>
         </dialog>
 
@@ -194,12 +184,12 @@
             <form method="dialog" class="modal-content">
                 <h2>Bronze Membership Benefits</h2>
                 <ul>
-                    <li>All NP benefits.</li>
-                    <li>Discounted tickets to chamber events.</li>
-                    <li>Quarterly training webinars.</li>
-                    <li>Social media mentions twice a year.</li>
+                    <li>All NP benefits</li>
+                    <li>Event ticket discounts</li>
+                    <li>Quarterly business training</li>
+                    <li>Two social media mentions per year</li>
                 </ul>
-                <button type="submit" class="modal-close">Close</button>
+                <button class="modal-close">Close</button>
             </form>
         </dialog>
 
@@ -207,12 +197,12 @@
             <form method="dialog" class="modal-content">
                 <h2>Silver Membership Benefits</h2>
                 <ul>
-                    <li>All Bronze benefits.</li>
-                    <li>Priority booth placement at chamber fairs.</li>
-                    <li>Spotlight feature on the home page once a year.</li>
-                    <li>Access to advanced training and mentoring.</li>
+                    <li>All Bronze benefits</li>
+                    <li>Priority booth location at fairs</li>
+                    <li>Homepage spotlight once a year</li>
+                    <li>Advanced mentoring and training</li>
                 </ul>
-                <button type="submit" class="modal-close">Close</button>
+                <button class="modal-close">Close</button>
             </form>
         </dialog>
 
@@ -220,14 +210,15 @@
             <form method="dialog" class="modal-content">
                 <h2>Gold Membership Benefits</h2>
                 <ul>
-                    <li>All Silver benefits.</li>
-                    <li>Premium spotlight advertising throughout the year.</li>
-                    <li>VIP invitations to exclusive networking events.</li>
-                    <li>Personalized support from chamber advisors.</li>
+                    <li>All Silver benefits</li>
+                    <li>Premium spotlight all year</li>
+                    <li>VIP networking invitations</li>
+                    <li>Dedicated chamber advisor</li>
                 </ul>
-                <button type="submit" class="modal-close">Close</button>
+                <button class="modal-close">Close</button>
             </form>
         </dialog>
+
     </main>
 
     <footer>
