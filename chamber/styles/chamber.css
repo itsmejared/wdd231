@@ -674,3 +674,145 @@ dialog::backdrop {
 .detail-row .label {
   font-weight: bold;
 }
+/* ============================================
+   DISCOVER PAGE — DESKTOP (LARGE SCREENS)
+   ============================================ */
+
+/* GRID de 4 columnas */
+.discover-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  grid-template-areas:
+    "place1 place2 place3 place4"
+    "place5 place6 place7 place8";
+}
+
+/* CARD desktop */
+.discover-card {
+  background: var(--white-color);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.discover-card h2 {
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discover-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.discover-card:hover img {
+  transform: scale(1.07);
+  filter: brightness(1.12);
+}
+
+.discover-card address {
+  font-weight: bolder;
+  text-align: center;
+  margin: 0.25rem 0 0.5rem 0;
+  min-height: 2.2rem; /* aprox. 2 líneas */
+  line-height: 1.1rem;
+  overflow: hidden;
+}
+
+.discover-card p {
+  text-align: justify;
+  hyphens: auto;
+  min-height: 3.3rem;
+  line-height: 1.1rem;
+  overflow: hidden;
+}
+
+.discover-card button {
+  width: 100%;
+  text-align: center;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
+  margin-top: 0.8rem;
+}
+
+.discover-card button:hover {
+  background-color: var(--accent-color);
+  color: var(--black-color);
+}
+
+/* ÁREAS DEL GRID */
+.place-1 {
+  grid-area: place1;
+}
+.place-2 {
+  grid-area: place2;
+}
+.place-3 {
+  grid-area: place3;
+}
+.place-4 {
+  grid-area: place4;
+}
+.place-5 {
+  grid-area: place5;
+}
+.place-6 {
+  grid-area: place6;
+}
+.place-7 {
+  grid-area: place7;
+}
+.place-8 {
+  grid-area: place8;
+}
+
+/* VISITOR MESSAGE */
+.visit-message {
+  width: 100%; /* full width of the grid area */
+  padding: 1rem 3rem 1rem 1rem;
+  background: var(--accent-color);
+  color: var(--black-color);
+  font-weight: 600;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+  /* layout */
+  position: relative;
+  display: flex;
+  justify-content: center; /* centers the text */
+  align-items: center;
+  margin: 1.5rem 0; /* spacing from title & grid */
+  text-align: center;
+}
+
+/* Close button */
+#closeVisitMsg {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--black-color);
+}
+
+#closeVisitMsg:hover {
+  transform: scale(1.15);
+}

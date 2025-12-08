@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lima Chamber of Commerce – Directory</title>
-    <meta name="description" content="Business directory of members of the Lima Chamber of Commerce.">
+    <title>Lima Chamber of Commerce – Discover Lima</title>
+    <meta name="description" content="Discover attractions and features from Lima, Peru." />
     <meta name="author" content="Jared Huayta">
 
     <!-- Social Meta -->
-    <meta property="og:title" content="Lima Chamber of Commerce – Directory">
-    <meta property="og:description" content="Discover the businesses that support our community.">
+    <meta property="og:title" content="Lima Chamber of Commerce Supporting Local Businesses">
+    <meta property="og:description" content="Discover attractions and features from Lima, Peru.">
     <meta property="og:image" content="https://itsmejared.github.io/wdd231/chamber/images/og-image.jpg" />
-    <meta property="og:url" content="https://itsmejared.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://itsmejared.github.io/wdd231/chamber/discover.html">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.ico">
@@ -24,14 +24,15 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-medium.css">
 
     <!-- JS -->
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script type="module" src="scripts/discover.js" defer></script>
 </head>
 
 <body>
+
     <header>
         <div class="logo-container">
             <img src="images/logo.svg" alt="Site Logo" class="logo">
@@ -40,9 +41,9 @@
         <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
         <nav id="nav-menu">
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -50,7 +51,14 @@
     </header>
 
     <main>
+        <h1>Discover Lima</h1>
 
+        <section id="visitMessage" class="visit-message">
+            <span id="visitText"></span>
+            <button id="closeVisitMsg" aria-label="Close visitor message">✕</button>
+        </section>
+
+        <section id="discoverGrid" class="discover-grid"></section>
     </main>
 
     <footer>
@@ -70,6 +78,7 @@
         <p>&copy; <span id="currentyear"></span> Lima Chamber of Commerce</p>
         <p id="lastModified"></p>
     </footer>
+
 </body>
 
 </html>
