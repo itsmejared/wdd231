@@ -1,8 +1,10 @@
 :root {
-  --primary: #005BBB;     /* FSY Blue */
-  --background: #F4F4F4;  /* Soft Light Gray */
-  --text: #222222;        /* Deep Charcoal */
-  --white: #FFFFFF;
+  /* Final palette (4 colors only) */
+  --navy: #1B2A41;         /* Header & Footer */
+  --mint: #2EC4B6;         /* Accent / Buttons / Highlights */
+  --background: #F7F7F7;   /* Page Background */
+  --text: #1E1E1E;         /* Main Text Color */
+  --white: #FFFFFF;        /* Neutral, not counted as a palette color */
 }
 
 /* Reset */
@@ -12,52 +14,67 @@
   box-sizing: border-box;
 }
 
-/* Base */
+/* ---------------------------
+   Base Styles
+---------------------------- */
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   background-color: var(--background);
   color: var(--text);
   line-height: 1.6;
   padding: 1rem;
-  text-align: left;
 }
 
 /* Typography */
-h1, h2 {
-  font-family: "Bebas Neue", sans-serif;
-  color: var(--primary);
-  line-height: 1.2;
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--white); /* Header title always white */
   margin-bottom: 0.5rem;
 }
 
-h1 {
-  text-align: center;
-  color: var(--white);
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--navy); /* Page section titles */
+  margin-bottom: 0.5rem;
 }
 
-section {
-  margin-bottom: 2rem;
+p, li {
+  font-size: 1rem;
 }
 
-/* Header */
+/* ---------------------------
+   Header
+---------------------------- */
 header {
-  background: var(--primary);
+  background: var(--navy);
   color: var(--white);
   padding: 1.5rem;
   text-align: center;
 }
 
-/* Footer */
+/* ---------------------------
+   Footer
+---------------------------- */
 footer {
-  background: var(--primary);
+  background: var(--navy);
   color: var(--white);
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
   margin-top: 2rem;
   font-size: 0.9rem;
+  border-top: 3px solid var(--mint);
 }
 
-/* Gallery */
+/* ---------------------------
+   Sections
+---------------------------- */
+section {
+  margin-bottom: 2rem;
+}
+
+/* ---------------------------
+   Gallery / Wireframes
+---------------------------- */
 .gallery {
   display: flex;
   justify-content: center;
@@ -71,14 +88,18 @@ footer {
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 3px solid var(--mint);
+  background: var(--white);
 }
 
 .thumbnail:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-/* Modal */
+/* ---------------------------
+   Modal
+---------------------------- */
 .modal {
   display: none;
   position: fixed;
@@ -93,19 +114,17 @@ footer {
   display: flex;
 }
 
-.modal a.close-area {
-  position: absolute;
-  inset: 0;
-  display: block;
-}
-
 .modal img {
-  position: relative;
   max-width: 90%;
   max-height: 90%;
   border-radius: 10px;
-  z-index: 1;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  background: var(--white);
+  padding: 8px;
+}
+
+.close-area {
+  position: absolute;
+  inset: 0;
 }
 
 .close {
@@ -116,15 +135,15 @@ footer {
   font-size: 2rem;
   text-decoration: none;
   font-weight: bold;
-  z-index: 2;
-  transition: color 0.2s;
 }
 
 .close:hover {
-  color: #FFD447; /* Sunrise Yellow as hover accent */
+  color: var(--mint);
 }
 
-/* Responsive */
+/* ---------------------------
+   Responsive
+---------------------------- */
 @media (min-width: 720px) {
   main {
     max-width: 1000px;
@@ -133,6 +152,6 @@ footer {
   }
 
   header h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 }
