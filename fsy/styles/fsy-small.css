@@ -55,25 +55,19 @@
     border: none;
     color: var(--white);
   }
-  .nav-overlay,
-  .nav-overlay a,
-  .nav-overlay button,
-  .nav-overlay * {
-    color: var(--white) !important;
-  }
+
   /* Hero */
-  .hero {
-    min-height: 0;
-    background-color: #1b2a41; /* navy — matches your palette */
-  }
+  .hero-text {
+  max-width: 90%;
+  text-align: center;
+}
 
-  .hero-content {
-    padding: 2rem 1.2rem;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
+.cta-button {
+  float: none;
+  display: inline-block;
+  margin-top: 1rem;
+  align-self: center;
+}
 
   /* Sections */
   .section {
