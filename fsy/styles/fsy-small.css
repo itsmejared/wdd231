@@ -55,10 +55,16 @@
     border: none;
     color: var(--white);
   }
-
+  .nav-overlay,
+  .nav-overlay a,
+  .nav-overlay button,
+  .nav-overlay * {
+    color: var(--white) !important;
+  }
   /* Hero */
   .hero {
     min-height: 0;
+    background-color: #1b2a41; /* navy — matches your palette */
   }
 
   .hero-content {

@@ -104,12 +104,6 @@ main {
 /* Hero */
 .hero {
   position: relative;
-  background-image: linear-gradient(
-      to right,
-      rgba(27, 42, 65, 0.9),
-      rgba(27, 42, 65, 0.5)
-    ),
-    url("../images/hero.jpg");
   background-size: cover;
   background-position: center;
   color: var(--white);
