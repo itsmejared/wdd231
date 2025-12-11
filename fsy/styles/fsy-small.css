@@ -19,11 +19,16 @@
   .nav-overlay {
     position: fixed;
     inset: 0;
-    background-color: var(--text);
+    background-color: #000; /* FIXED: ensures contrast always passes */
     display: none;
     align-items: center;
     justify-content: center;
     z-index: 100;
+  }
+
+  .nav-overlay,
+  .nav-overlay * {
+    color: #ffffff; /* ensures all text remains accessible */
   }
 
   .nav-overlay.open {
