@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "title": "FSY — For the Strength of Youth Program",
+    "description": "Official FSY information for youth participating around the world.",
+    "fullDescription": "Learn what FSY is, what to expect, and how youth prepare spiritually and socially for the experience.",
+    "image": "images/singing.jpg",
+    "path": "/youth/fsy",
+    "category": "FSY",
+    "type": "Program"
+  },
+  {
+    "id": 2,
+    "title": "FSY Youth Guide",
+    "description": "Guidelines and standards for youth attending FSY.",
+    "fullDescription": "Official resource outlining expectations, standards, dress guidelines, and behavior expectations for FSY attendees.",
+    "image": "images/dancing.jpg",
+    "path": "/youth/fsy/guide",
+    "category": "FSY",
+    "type": "Guide"
+  },
+  {
+    "id": 3,
+    "title": "Youth Music — Official Library",
+    "description": "Music created to strengthen youth and share testimony.",
+    "fullDescription": "Explore uplifting, clean, spiritual youth music used in FSY devotionals and other youth events.",
+    "image": "images/singing.jpg",
+    "path": "/media/music/youth",
+    "category": "Music",
+    "type": "Library"
+  },
+  {
+    "id": 4,
+    "title": "Come Follow Me — Youth",
+    "description": "Weekly gospel study resources designed for youth.",
+    "fullDescription": "Teachings, videos, and study tools that help youth build testimony and prepare spiritually for FSY.",
+    "image": "images/dancing.jpg",
+    "path": "/study/manual/come-follow-me/individuals-and-families",
+    "category": "Youth",
+    "type": "Study"
+  },
+  {
+    "id": 5,
+    "title": "Youth Face to Face",
+    "description": "Messages from prophets and apostles directed to the youth.",
+    "fullDescription": "Rewatch Face to Face events that teach principles of discipleship and prepare youth for spiritual growth.",
+    "image": "images/singing.jpg",
+    "path": "/youth/face-to-face",
+    "category": "Youth",
+    "type": "Event"
+  },
+  {
+    "id": 6,
+    "title": "For the Strength of Youth — Standards Guide",
+    "description": "The official FSY standard booklet.",
+    "fullDescription": "Learn inspired principles that help youth make righteous choices based on agency and discipleship.",
+    "image": "images/dancing.jpg",
+    "path": "/study/manual/for-the-strength-of-youth",
+    "category": "Youth",
+    "type": "Guide"
+  },
+  {
+    "id": 7,
+    "title": "FSY Activities & Devotionals",
+    "description": "Collection of devotionals and activities used in FSY.",
+    "fullDescription": "Talks, themes, messages, and spiritual resources for youth participating in FSY.",
+    "image": "images/singing.jpg",
+    "path": "/youth",
+    "category": "FSY",
+    "type": "Devotional"
+  },
+  {
+    "id": 8,
+    "title": "Youth Articles — Gospel Living",
+    "description": "Stories and teachings written for youth.",
+    "fullDescription": "Youth-centered inspiration on discipleship, repentance, standards, and spiritual growth.",
+    "image": "images/dancing.jpg",
+    "path": "/youth/article",
+    "category": "Youth",
+    "type": "Article"
+  },
+  {
+    "id": 9,
+    "title": "Youth Theme",
+    "description": "Annual theme and music for all youth programs.",
+    "fullDescription": "Official yearly youth theme with videos, music, and teachings used heavily in FSY devotionals.",
+    "image": "images/singing.jpg",
+    "path": "/youth/theme",
+    "category": "Youth",
+    "type": "Theme"
+  },
+  {
+    "id": 10,
+    "title": "Youth Baptismal Covenants",
+    "description": "A simple explanation of the covenants youth make with God.",
+    "fullDescription": "Teachings that help FSY participants prepare spiritually and keep sacred commitments to the Lord.",
+    "image": "images/dancing.jpg",
+    "path": "/study/new-era/2019/02/baptism",
+    "category": "Youth",
+    "type": "Teachings"
+  },
+  {
+    "id": 11,
+    "title": "Youth Mutual Activities",
+    "description": "Ideas for weekly youth activities.",
+    "fullDescription": "Hundreds of activity ideas that help strengthen friendships and testimony — helpful for FSY councils.",
+    "image": "images/singing.jpg",
+    "path": "/youth/activities",
+    "category": "Youth",
+    "type": "Activities"
+  },
+  {
+    "id": 12,
+    "title": "Gospel Living App",
+    "description": "The official app for youth inspiration, posts, and spiritual goals.",
+    "fullDescription": "Daily reminders, uplifting posts, and tools to help FSY youth set Christ-centered goals.",
+    "image": "images/dancing.jpg",
+    "path": "/youth/gospel-living",
+    "category": "Youth",
+    "type": "App"
+  },
+  {
+    "id": 13,
+    "title": "Youth Video Topics",
+    "description": "Uplifting youth messages and short videos.",
+    "fullDescription": "Browse hundreds of short videos that strengthen faith, courage, and discipleship.",
+    "image": "images/singing.jpg",
+    "path": "/media/video/youth",
+    "category": "Youth",
+    "type": "Videos"
+  },
+  {
+    "id": 14,
+    "title": "Youth Music Playlists",
+    "description": "Official youth playlists for FSY devotionals and activities.",
+    "fullDescription": "Music designed to encourage unity, reverence, and excitement during FSY sessions.",
+    "image": "images/dancing.jpg",
+    "path": "/media/music/youth/playlists",
+    "category": "Music",
+    "type": "Playlist"
+  },
+  {
+    "id": 15,
+    "title": "Jesus Christ — Youth Messages",
+    "description": "Messages that help youth strengthen their relationship with Christ.",
+    "fullDescription": "Teachings specifically focused on helping youth come closer to the Savior — foundational for FSY.",
+    "image": "images/singing.jpg",
+    "path": "/jesus-christ",
+    "category": "Youth",
+    "type": "Teachings"
+  }
+]

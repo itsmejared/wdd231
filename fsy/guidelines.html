@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FSY Music &amp; Variety – Guidelines</title>
+
+  <meta name="description" content="Review the guidelines, standards, and audition form for the FSY Music &amp; Variety Program." />
+  <meta name="author" content="Jared Huayta" />
+
+  <meta property="og:title" content="FSY Music &amp; Variety – Guidelines" />
+  <meta property="og:description" content="Learn the FSY Music &amp; Variety standards and submit your audition for review." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://itsmejared.github.io/wdd231/fsy/guidelines.html" />
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" href="images/fsy-logo.png" />
+
+  <link rel="stylesheet" href="styles/fsy.css" />
+  <link rel="stylesheet" href="styles/fsy-small.css" media="(max-width: 720px)" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/fsy-logo.png" alt="FSY Music &amp; Variety logo" class="logo-img" />
+      <span class="brand-text">FSY Music &amp; Variety</span>
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation">
+      ☰
+    </button>
+
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="guidelines.html" class="active">Guidelines</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </header>
+
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+    <div class="nav-overlay-content">
+      <button class="overlay-close" id="overlay-close" aria-label="Close navigation">×</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="guidelines.html">Guidelines</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <section class="section">
+      <h1>Guidelines &amp; Audition Information</h1>
+      <p>
+        The FSY Music &amp; Variety Program is designed to invite the Spirit, strengthen testimonies,
+        and provide opportunities for youth to share their talents in uplifting ways.
+        Every performance should reflect gospel standards and support the overall purpose of FSY.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>General Standards</h2>
+      <ul class="guidelines-list">
+        <li>Content should be faith-building, clean, and in harmony with the teachings of Jesus Christ.</li>
+        <li>Lyrics and spoken words must avoid inappropriate language, themes, or innuendo.</li>
+        <li>Costumes and clothing should be modest and appropriate for a Church setting.</li>
+        <li>Performances should typically be between 2–4 minutes in length.</li>
+        <li>Collaborative performances are encouraged when they help invite the Spirit.</li>
+      </ul>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          Can I use secular music if the message is positive?
+        </button>
+        <div class="faq-answer">
+          <p>
+            In some cases, secular music with a clearly uplifting message may be appropriate,
+            but it should still support the purpose of FSY and invite the Spirit. Please avoid songs
+            that are strongly associated with worldly themes, romance, or rebellion, even if the lyrics
+            are edited. When in doubt, choose music that clearly focuses on the Savior, faith, gratitude,
+            or other gospel-centered topics.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          Do I need to send a full performance or just a sample?
+        </button>
+        <div class="faq-answer">
+          <p>
+            Please record the full version of your planned performance so that your FSY leaders can review
+            timing, content, and overall tone. Simple phone recordings are perfectly acceptable. Your leaders
+            are more interested in spiritual impact and preparation than in professional production quality.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          What if I am nervous or not very experienced?
+        </button>
+        <div class="faq-answer">
+          <p>
+            Many youth feel nervous about performing, and that is completely normal. The Music &amp; Variety Program
+            is not a talent show focused on perfection; it is an opportunity to bless others. If your desire is to testify
+            of Christ and uplift your peers, you are exactly the kind of participant we are hoping for.
+          </p>
+        </div>
+      </div>
+
+      <p class="after-faq-message">
+        If you feel ready to share your talents in an uplifting way, please submit your audition using the form below.
+      </p>
+    </section>
+
+    <!-- AUDITION FORM -->
+    <section class="section" id="audition-form">
+      <h2>Audition Submission Form</h2>
+
+      <p id="previous-submission-message" class="info-banner" aria-live="polite" hidden></p>
+
+      <form id="auditionForm" action="submission.html" method="get" novalidate>
+        <div class="form-field">
+          <label for="name">Participant Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div class="form-field">
+          <label for="unit">Stake / Ward</label>
+          <input id="unit" name="unit" type="text" required />
+        </div>
+
+        <div class="form-field">
+          <label for="performanceType">Performance Type</label>
+          <select id="performanceType" name="performanceType" required>
+            <option value="">Select an option</option>
+            <option value="vocal">Vocal solo / group</option>
+            <option value="instrumental">Instrumental</option>
+            <option value="dance">Dance / cultural presentation</option>
+            <option value="spoken">Spoken word / drama</option>
+            <option value="other">Other uplifting performance</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="videoUrl">Video Link (YouTube or similar)</label>
+          <input id="videoUrl" name="videoUrl" type="url" required />
+        </div>
+
+        <div class="form-field">
+          <label for="notes">Short Description</label>
+          <textarea id="notes" name="notes" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="primary-button">Submit Audition</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="guidelines.html">Guidelines</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+
+    <p id="fsy-countdown">FSY starts in …</p>
+
+    <p>© 2025 Jared Huayta. Lima – Perú.</p>
+
+  </footer>
+
+  <script type="module" src="scripts/guidelines.js"></script>
+</body>
+</html>

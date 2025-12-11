@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FSY Music &amp; Variety – Submission Summary</title>
+
+  <meta name="description" content="View the summary of your FSY Music &amp; Variety audition submission." />
+  <meta name="author" content="Jared Huayta" />
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" href="images/fsy-logo.png" />
+
+  <link rel="stylesheet" href="styles/fsy.css" />
+  <link rel="stylesheet" href="styles/fsy-small.css" media="(max-width: 720px)" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/fsy-logo.png" alt="FSY Music &amp; Variety logo" class="logo-img" />
+      <span class="brand-text">FSY Music &amp; Variety</span>
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation">
+      ☰
+    </button>
+
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="guidelines.html">Guidelines</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </header>
+
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+    <div class="nav-overlay-content">
+      <button class="overlay-close" id="overlay-close" aria-label="Close navigation">×</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="guidelines.html">Guidelines</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <section class="section">
+      <h1>Submission Summary</h1>
+      <p>
+        Thank you for submitting your audition information. Review the details below to make sure
+        everything looks correct. If you need to make changes, you can return to the guidelines page
+        and submit the form again.
+      </p>
+
+      <div id="submission-summary" class="submission-summary">
+        <!-- Filled by JS -->
+      </div>
+
+      <p class="submission-links">
+        <a href="guidelines.html">Go back to Guidelines</a> |
+        <a href="index.html">Return to Home</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="guidelines.html">Guidelines</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+
+    <p id="fsy-countdown">FSY starts in …</p>
+
+    <p>© 2025 Jared Huayta. Lima – Perú.</p>
+
+  </footer>
+
+  <script type="module" src="scripts/submission.js"></script>
+</body>
+</html>

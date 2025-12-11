@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FSY Music &amp; Variety – Home</title>
+
+  <meta name="description" content="Discover how the FSY Music &amp; Variety Program helps youth share their talents in uplifting, spiritual ways." />
+  <meta name="author" content="Jared Huayta" />
+
+  <meta property="og:title" content="FSY Music &amp; Variety – Home" />
+  <meta property="og:description" content="Learn how to participate in the FSY Music &amp; Variety Program and see examples of past youth performances." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://itsmejared.github.io/wdd231/fsy/index.html" />
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" href="images/fsy-logo.png" />
+
+  <link rel="stylesheet" href="styles/fsy.css" />
+  <link rel="stylesheet" href="styles/fsy-small.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/fsy-logo.png" alt="FSY Music &amp; Variety logo" class="logo-img" />
+      <span class="brand-text">FSY Music &amp; Variety</span>
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation">
+      ☰
+    </button>
+
+    <nav class="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="guidelines.html">Guidelines</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </header>
+
+  <!-- Mobile overlay nav -->
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+    <div class="nav-overlay-content">
+      <button class="overlay-close" id="overlay-close" aria-label="Close navigation">×</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="guidelines.html">Guidelines</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Discover the FSY Music &amp; Variety Program</h1>
+        <p>
+          See how youth share their testimonies through music, spoken word, and other uplifting talents during FSY.
+        </p>
+        <a class="hero-button" href="guidelines.html#audition-form">
+          Learn how to audition
+        </a>
+      </div>
+    </section>
+
+    <!-- PAST PERFORMANCES -->
+    <section class="section">
+      <h2>Past Performances</h2>
+
+      <div class="performance-layout">
+        <div class="performance-video">
+          <iframe
+            id="performance-video"
+            src=""
+            title="FSY performance video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="performance-description">
+          <p id="performance-description"></p>
+        </div>
+      </div>
+
+      <div class="performance-controls">
+        <button id="prev-performance" aria-label="Previous performance">‹</button>
+        <button id="next-performance" aria-label="Next performance">›</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="guidelines.html">Guidelines</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+
+    <p id="fsy-countdown">FSY starts in …</p>
+
+    <p>© 2025 Jared Huayta. Lima – Perú.</p>
+
+  </footer>
+
+  <script type="module" src="scripts/index.js"></script>
+</body>
+</html>
