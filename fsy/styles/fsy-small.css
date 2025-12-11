@@ -46,6 +46,16 @@
     text-decoration: none;
   }
 
+  .nav-overlay button {
+    color: white;
+  }
+
+  .nav-overlay h1,
+  .nav-overlay h2,
+  .nav-overlay p {
+    color: white;
+  }
+
   .overlay-close {
     position: absolute;
     top: 1rem;
@@ -58,16 +68,16 @@
 
   /* Hero */
   .hero-text {
-  max-width: 90%;
-  text-align: center;
-}
+    max-width: 90%;
+    text-align: center;
+  }
 
-.cta-button {
-  float: none;
-  display: inline-block;
-  margin-top: 1rem;
-  align-self: center;
-}
+  .cta-button {
+    float: none;
+    display: inline-block;
+    margin-top: 1rem;
+    align-self: center;
+  }
 
   /* Sections */
   .section {

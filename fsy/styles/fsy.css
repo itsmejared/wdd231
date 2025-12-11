@@ -111,6 +111,7 @@ main {
   justify-content: center; /* centers the text block */
   align-items: center;
   text-align: center; /* center all text inside */
+  background-color: #1b2a41; 
 }
 
 .hero-img {
@@ -120,11 +121,20 @@ main {
   filter: brightness(60%);
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* darkens background BEFORE image loads */
+  z-index: 0;
+}
+
 .hero-text {
   position: absolute;
+  z-index: 1;
   max-width: 900px;
   padding: 0 2rem;
-  color: white;
+  color: var(--white);
   text-align: center;
   display: flex;
   flex-direction: column;
